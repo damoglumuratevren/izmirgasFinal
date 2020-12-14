@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <!--
+    <div class="center d-flex p-2">
+        <div class="text-center mt-4 top50">
+            <img src="img/logo.png" class="rounded" alt="Logo">
+        </div>
+        <div class="clearfix"> </div>
+        <div class="container px-4 padding-xs Margin50 whiteArea  companyNameDiv">
+            <div class="CompanyTitle">Damoğlu Sıhhi tesisat</div>
+        </div>
+        <div class="container px-4 padding-xs Margin10 greenArea  companyVisaDuractionTrue">
+            <div class="Authorise">YETKİLİ FİRMA</div>
+        </div>
+        <div class="container px-4 padding-xs Margin10   companyVisaDuractionFalse">
+            <div class="Authorise">YETKİLİ DEĞİL</div>
+        </div>
+        <div class="container px-4 top50">
+            <div class="row gx-5">
+                <div class="col beyaz">
+                    <div class="p-3 beyaz">
+                        <div class="point ">98,78</div>
+                        <div class="commant1 ">Firma</div>
+                        <div class="commant1 ">Performans Puanı</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 beyaz">
+                        <div class="point ">98,78</div>
+                        <div class="commant1 ">İlk Seferde</div>
+                        <div class="commant1 ">Gaz Açma Yüzdesi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-4">
+            <div class="CompanyInfo">FİRMA BİLGİLERİ</div>
+        </div>
+        <div class="emptyDiv"></div>
+        <div class="white-div container">
+            <div class="container px-4 conpanyInformation whiteArea">
+                <div class="divTitle">ADRES:</div>
+                <div class="divComment">Anafartalar Mah. cebeci Sok. No:11 Kat:4</div>
+            </div>
+            <div class="container px-4 conpanyInformation whiteArea">
+                <div class="divTitle">İLÇE</div>
+                <div class="divComment">Ödemiş</div>
+            </div>
+            <div class="container px-4 conpanyInformation whiteArea">
+                <div class="fl">
+                    <div class="divTitle MinWidth">TELEFON</div>
+                    <div class="divComment MinWidth">506 384 11 29</div>
+                </div>
+                <div class="fr buttonStyle">Ara</div>
+            </div>
+            <div class="container px-4 conpanyInformation whiteArea">
+                <div class="fl">
+                    <div class="divTitle MinWidth">E-POSTA</div>
+                    <div class="divComment MinWidth">mevrend@gmail.com</div>
+                </div>
+                <div class="fr buttonStyleEposta">E-posta Gönder</div>
+            </div>
+            <div class="container px-4 conpanyInformation whiteArea">
+                <div class="divTitle">SAHİBİ /ORTAGI</div>
+                <div class="divComment">Murat Evren DAMOĞLU</div>
+            </div>
+            <div class="container px-4 conpanyInformation whiteArea">
+                <div class="fl">
+                    <div class="divTitle MinWidth">SAHİBİ /ORTAGI TELEFON</div>
+                    <div class="divComment MinWidth"></div>
+                </div>
+                <div class="fr buttonStyle">Ara</div>
+            </div>
+            <div class="container px-4 conpanyInformation whiteArea">
+                <div class="divTitle">VİZE BİTİŞ TARİHİ</div>
+                <div class="divComment">05.11.2021</div>
+            </div>
+        </div>
+        <div class="container px-4">
+            <div class="CompanyInfo">PERSONEL BİLGİLERİ</div>
+        </div>
+        <div class="emptyDiv"></div>
+
+
+        <div class="container px-4">
+            <div class="pictureBox fl">
+                <div class="card">
+                    <img class="picture" src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/profile-icon.png" alt="Card image cap">
+                    <div class="pictureName">Murat Evren DAMOĞLU</div>
+                    <div class="pictureJob">Mühendis</div>
+                    <div class="picturePhone">5063 384 1129</div>
+                </div>
+            </div>
+            <div class="pictureBox fl">
+                <div class="card">
+                    <img class="picture" src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/profile-icon.png" alt="Card image cap">
+                    <div class="pictureName">Murat Evren DAMOĞLU</div>
+                    <div class="pictureJob">Usta</div>
+                    <div class="picturePhone"></div>
+                </div>
+            </div>
+            <div class="pictureBox fl">
+                <div class="card">
+                    <img class="picture" src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/profile-icon.png" alt="Card image cap">
+                    <div class="pictureName">Murat Evren DAMOĞLU</div>
+                    <div class="pictureJob">Usta</div>
+                    <div class="picturePhone"></div>
+                </div>
+            </div>
+            <div class="pictureBox fl">
+                <div class="card">
+                    <img class="picture" src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/profile-icon.png" alt="Card image cap">
+                    <div class="pictureName">Murat Evren DAMOĞLU</div>
+                    <div class="pictureJob"></div>
+                    <div class="picturePhone">5063 384 1129</div>
+                </div>
+            </div>
+
+        </div>
+    </div>-->
+</body>
+
+
+
+</html>

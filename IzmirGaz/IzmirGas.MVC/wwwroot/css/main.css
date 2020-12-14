@@ -1,0 +1,210 @@
+.center {
+    position: relative;
+    /*  display: flex;*/
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #F4F5FA;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.backColor {
+    background-color: red;
+}
+
+.top50 {
+    padding-top: 50px;
+}
+
+.Margin50 {
+    margin-top: 50px;
+}
+
+.Margin10 {
+    margin-top: 10px;
+}
+
+.companyNameDiv {
+    width: auto;
+    height: 45px;
+    background-color: #FFFFFF;
+}
+
+.CompanyTitle {
+    color: #18BFE2;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 11px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Authorise {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 11px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.companyVisaDuractionTrue {
+    width: auto;
+    height: 45px;
+    background-color: #14C55B;
+}
+
+.companyVisaDuractionFalse {
+    width: auto;
+    height: 45px;
+    background-color: #ff0000;
+}
+
+.whiteArea {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.greenArea {
+    border: 1px solid #14C55B;
+    background-color: #14C55B;
+    border-radius: 2px;
+}
+
+.backcolor {
+    background-color: red;
+}
+
+.point {
+    color: #14C55B;
+    text-align: center;
+    font-size: 25pX;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.commant1 {
+    color: #868994;
+    text-align: center;
+    font-size: 20pX;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.CompanyInfo {
+    margin-top: 10px;
+    color: #9095b1;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.divTitle {
+    color: #6e7dad;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.divComment {
+    color: #807ea0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+}
+
+.conpanyInformation {
+    border-bottom: 1px solid #dbdae9;
+    margin-top: 5px;
+    float: left;
+    height: 50px;
+}
+
+.buttonStyle {
+    width: auto;
+    font-family: "Times New Roman", Times, serif;
+    color: #36bce7;
+    font-size: 18px;
+    margin-top: 5px;
+    border: 1px solid #36bce7;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.buttonStyleEposta {
+    width: auto;
+    font-family: "Times New Roman", Times, serif;
+    color: #36bce7;
+    font-size: 18px;
+    margin-top: 5px;
+    border: 1px solid #36bce7;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.pictureBox {
+    width: 300px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.picture {
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #dbdae9;
+}
+
+.pictureName {
+    margin-top: 5px;
+    height: 25px;
+    text-align: center;
+    color: #807ea0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.pictureJob {
+    min-width: 100px;
+    height: 25px;
+    margin-top: 5px;
+    text-align: center;
+    color: #807ea0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.picturePhone {
+    min-width: 100px;
+    height: 25px;
+    margin-top: 5px;
+    text-align: center;
+    color: #807ea0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.MinWidth {
+    min-width: 250px;
+}
+
+.white-div {
+    background-color: white;
+}
+
+.emptyDiv {
+    width: auto;
+    height: 10px;
+}
+
+.beyaz {
+    background-color: #FFFFFF;
+    height: 115px;
+}

@@ -1,0 +1,131 @@
+﻿@using IzmirGaz.Shared.Utilities.Results.ComplexTypes
+@model IzmirGaz.Entities.Dtos.CompanyListDto
+@{
+
+    Layout = "_Layout";
+
+}
+@if (Model.ResultStatus == ResultStatus.Success)
+{
+    foreach (var company in Model.Companies)
+    {
+
+
+
+        <div class="center d-flex p-2">
+            <div class="text-center mt-4 top50">
+                <img src="img/logo.png" class="rounded" alt="Logo">
+            </div>
+            <div class="clearfix"> </div>
+            <div class="container px-4 padding-xs Margin50 whiteArea  companyNameDiv">
+                <div class="CompanyTitle"> @company.CompanyName</div>
+            </div>
+
+            @if (company.VisaDuration > DateTime.Now)
+            {
+                <div class="container px-4 padding-xs Margin10 greenArea  companyVisaDuractionTrue">
+                    <div class="Authorise">YETKİLİ FİRMA</div>
+                </div>
+            }
+            else
+            {
+                <div class="container px-4 padding-xs Margin10   companyVisaDuractionFalse">
+                    <div class="Authorise">YETKİLİ DEĞİL</div>
+                </div>
+            }
+
+
+            <div class="container px-4 top50">
+                <div class="row gx-5">
+                    <div class="col beyaz">
+                        <div class="p-3 beyaz">
+                            <div class="point ">@company.CompanyPerformanceReport</div>
+                            <div class="commant1 ">Firma</div>
+                            <div class="commant1 ">Performans Puanı</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 beyaz">
+                            <div class="point ">@company.PercentageOfGasFired</div>
+                            <div class="commant1 ">İlk Seferde</div>
+                            <div class="commant1 ">Gaz Açma Yüzdesi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-4">
+                <div class="CompanyInfo">FİRMA BİLGİLERİ</div>
+            </div>
+            <div class="emptyDiv"></div>
+            <div class="white-div container">
+                <div class="container px-4 conpanyInformation whiteArea">
+                    <div class="divTitle">ADRES:</div>
+                    <div class="divComment">@company.Address</div>
+                </div>
+                <div class="container px-4 conpanyInformation whiteArea">
+                    <div class="divTitle">İLÇE</div>
+                    <div class="divComment">@company.CompanyCountry</div>
+                </div>
+                <div class="container px-4 conpanyInformation whiteArea">
+                    <div class="fl">
+                        <div class="divTitle MinWidth">TELEFON</div>
+                        <div class="divComment MinWidth">@company.CompanyPhoneNumber</div>
+                    </div>
+                    <div class="fr buttonStyle">Ara</div>
+                </div>
+                <div class="container px-4 conpanyInformation whiteArea">
+                    <div class="fl">
+                        <div class="divTitle MinWidth">E-POSTA</div>
+                        <div class="divComment MinWidth">@company.Email</div>
+                    </div>
+                    <div class="fr buttonStyleEposta">E-posta Gönder</div>
+                </div>
+                <div class="container px-4 conpanyInformation whiteArea">
+                    <div class="divTitle">SAHİBİ /ORTAGI</div>
+                    <div class="divComment">@company.CompanyManagerFirstName @company.CompanyManagerLastName</div>
+                </div>
+                <div class="container px-4 conpanyInformation whiteArea">
+                    <div class="fl">
+                        <div class="divTitle MinWidth">SAHİBİ /ORTAGI TELEFON</div>
+                        <div class="divComment MinWidth">@company.CompanyManagerPhoneNumber</div>
+                    </div>
+                    <div class="fr buttonStyle">Ara</div>
+                </div>
+                <div class="container px-4 conpanyInformation whiteArea">
+                    <div class="divTitle">VİZE BİTİŞ TARİHİ</div>
+                    <div class="divComment">@company.VisaDuration.ToShortDateString()</div>
+                </div>
+
+                <div class="container px-4 conpanyInformation whiteArea">
+                    <div class="divTitle">SERTİFİKA BİTİŞ TARİHİ</div>
+                    <div class="divComment">@company.CompanyCertificateEndDate.ToShortDateString()</div>
+                </div>
+            </div>
+            <div class="container px-4">
+                <div class="CompanyInfo">PERSONEL BİLGİLERİ</div>
+            </div>
+            <div class="emptyDiv"></div>
+
+
+            <div class="container px-4">
+                @foreach (var cp in company.CompanyPersonnels)
+                {
+                    <div class="pictureBox fl">
+                        <div class="card">
+                            <img class="picture" src="@cp.PersonelImg" alt="Card image cap">
+                            <div class="pictureName">@cp.FirstName @cp.LastName.ToUpper()</div>
+                            <div class="pictureJob">@cp.PersonelType</div>
+                            <div class="picturePhone">@cp.PhoneNumber</div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+        <div class="emptyDiv"></div>
+        <div class="emptyDiv"></div>
+        <div class="emptyDiv"></div>
+
+    }
+}
